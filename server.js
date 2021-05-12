@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 3000
 const socketio = require('socket.io')
 const { Socket } = require('dgram')
 const { TIMEOUT } = require('dns')
+const { clear } = require('console')
 const app = express()
 const server = http.createServer(app)
 const io = socketio(server)
@@ -88,6 +89,7 @@ io.on('connection', socket => {
         socket.disconnect()
     },600000) //ten minute limit per player
 
-
-
+    //Chat
+    socket.on('message', (text) => {io.emit('message', text)});
+    
 })
