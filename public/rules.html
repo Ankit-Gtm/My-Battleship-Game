@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Battleships</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" type="image/jpg" href="/images/favicon.jpg">
+    </head>
+    <body>
+        <div class="rules">
+            <h3 class="heading">
+                How to Play :
+            </h3>
+
+            <p class="sub-heading">
+                Game Objective
+            </p>
+
+            <p class="paragraph">
+                The object of Battleship is to try and sink all of the other player's ships before they sink all of your ships.
+                All of the other player's ships are somewhere on his/her grid.
+                You try and hit them by clicking on one of the squares on your opponent's grid (The right grid).
+                The other player also tries to hit your ships by clicking on one of the squares.
+                Neither you nor the other player can see the other's grid so you must try to guess where the ships are.
+                Each player in the game has two grids:  the one on the left side for the player's ships and the one on the right side for recording the player's guesses.
+            </p>
+
+            <p class="sub-heading">
+                Starting a New Game
+            </p>
+
+            <p class="paragraph">
+                Each player places the 5 ships somewhere on their grid (on the left grid).
+                The ships can only be placed vertically or horizontally.
+                Diagonal placement is not allowed.
+                No part of a ship may hang off the edge of the grid.
+                Ships may not overlap each other.
+                No ships may be placed on another ship.
+                <br>
+                <br>
+                Once the guessing begins, the players cannot move the ships.
+                <br>
+                <br>
+                The 5 ships are:  Carrier (occupies 5 spaces), Battleship (4 spaces), Cruiser (3 spaces), Submarine (3 spaces), and Destroyer (2 spaces).
+            </p>
+
+            <p class="sub-heading">
+                Playing the Game
+            </p>
+
+            <p class="paragraph">
+                Player's take turns guessing by clicking on the squares on their opponent's grid (The right grid).
+                If your shot was a hit then it will be indicated by a red dot and if your shot was a miss then it will be indicated by a white dot.
+                When all of the squares that one your ships occupies have been hit, the ship will be sunk.
+                In the game, on your grid (The left grid) you will be able to see your opponent's hits or misses. 
+                <br>
+                <br>
+                As soon as all of one player's ships have been sunk, the game ends.
+            </p>
+        </div>
+        <div class="container hidden-info">
+            <div id="back-button">
+                <a href="/index.html" class="btn back-button">Back</a>
+            </div>
+        </div>
+    </body>
+</html>
